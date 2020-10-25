@@ -1,6 +1,6 @@
 {
   "name": "forger",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "A command line tool for Laravel forge",
   "main": "bin/index.js",
   "scripts": {

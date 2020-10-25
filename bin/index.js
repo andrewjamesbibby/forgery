@@ -20,7 +20,7 @@ figlet.text('Forgery', {
     console.log(chalk.green(data));
 
     console.log(`
-  Forgery 0.1.0 by Andrew James Bibby
+  Forgery 0.2.0 by Andrew James Bibby
     `);
 
     menu.main();
