@@ -1,0 +1,21 @@
+{
+  "name": "forger",
+  "version": "0.0.1",
+  "description": "A command line tool for Laravel forge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew James Bibby",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "chalk": "^4.1.0",
+    "cli-table3": "^0.6.0",
+    "configstore": "^5.0.1",
+    "dedent": "^0.7.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3",
+    "inquirer-autocomplete-prompt": "^1.2.0"
+  }
+}
