@@ -394,7 +394,7 @@ exports.settings = () => {
 
 exports.about = () => {
     console.log(`
- Forgery 0.2.0 by Andrew James Bibby
+ Forgery 0.3.0 by Andrew James Bibby
  Github: https://github.com/andrewjamesbibby/forgery
  Twitter: @andrewjbibby
  Licence: MIT
