@@ -10,7 +10,7 @@
   "author": "Andrew James Bibby",
   "license": "MIT",
   "bin": {
-    "forger": "./bin/index.js"
+    "forgery": "./bin/index.js"
   },
   "keywords": [
     "laravel",
