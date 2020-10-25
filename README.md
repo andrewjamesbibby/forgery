@@ -43,7 +43,7 @@ forgery
 
 3/ Navigate to 'Settings' and enter Forge API key when prompted
 
-**Note: The API Key will be stored at ~/.config/configstore/forgery.json so ensure to remove this file if Forger is uninstalled and no longer required**
+**Note: The API Key will be stored at ~/.config/configstore/forgery.json so ensure to remove this file if Forgery is uninstalled and no longer required**
 
 ## Contributing
 Any contributions you make are **greatly appreciated**.
