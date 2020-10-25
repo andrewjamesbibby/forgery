@@ -8,12 +8,11 @@
 
   </p>
 
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="/screenshots/main.png" alt="Logo">
+  <a href="https://github.com/andrewjamesbibby/forgery">
+    <img src="https://github.com/andrewjamesbibby/forgery/blob/ce40584757bec95ce4b88acd399fcfe186d22046/screenshots/main.png?raw=true" alt="Logo">
   </a>
 </p>
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 When dealing with multiple servers on a daily basis it is important to have all information available when required.
@@ -24,7 +23,6 @@ All user input is gathered via interactive menus which means no need to remember
 
 Note: Forgery has been developed and tested on Mac OS only. Please report an issue if there are any problems on other platforms.
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 ### Prerequisites
@@ -33,22 +31,17 @@ This tool requires that Node.js and NPM are both installed. Instructions to inst
 
 ### Installation
 
-1/ Clone the repo
+1/ Install globally: 
 ```
-git clone https://github.com/andrewjamesbibby/forgery.git
-```
-
-2/ Install NPM packages
-```
-npm install
+npm install -g @andrewjamesbibby/forgery
 ```
 
-3/ Open 
+2/ Open Forger anywhere:
 ```
-node index.js
+forger
 ```
 
-4/ Navigate to 'Settings' and enter Forge API key when prompted
+3/ Navigate to 'Settings' and enter Forge API key when prompted
 
 **Note: The API Key will be stored at ~/.config/configstore/forger.json so ensure to remove this file if Forger is uninstalled and no longer required**
 
@@ -66,7 +59,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Twitter - [@andrewjbibby](https://twitter.com/andrewjbibby)
+Twitter: [@andrewjbibby](https://twitter.com/andrewjbibby)
 
 Project Link: [https://github.com/andrewjamesbibby/forgery](https://github.com/andrewjamesbibby/forgery)
 

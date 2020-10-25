@@ -1,5 +1,5 @@
 {
-  "name": "forger",
+  "name": "@andrewjamesbibby/forgery",
   "version": "0.2.0",
   "description": "A command line tool for Laravel forge",
   "main": "bin/index.js",
