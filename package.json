@@ -16,7 +16,7 @@
     "laravel",
     "forge",
     "api",
-    "cli",
+    "cli"
   ],
   "dependencies": {
     "axios": "^0.20.0",
