@@ -2,6 +2,7 @@
   "name": "@andrewjamesbibby/forgery",
   "version": "0.2.0",
   "description": "A command line tool for Laravel forge",
+  "repository": "andrewjamesbibby/forgery",
   "main": "bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +12,12 @@
   "bin": {
     "forger": "./bin/index.js"
   },
+  "keywords": [
+    "laravel",
+    "forge",
+    "api",
+    "cli",
+  ],
   "dependencies": {
     "axios": "^0.20.0",
     "chalk": "^4.1.0",
