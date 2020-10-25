@@ -375,6 +375,7 @@ exports.settings = () => {
         new inquirer.Separator(''),
         { name: '<--', value: this.main },
         { name: 'Set Forge API key', value: settings.setApiKey },
+        { name: 'Remove Forge API key', value: settings.removeApiKey },
     ];
 
     inquirer.prompt([
