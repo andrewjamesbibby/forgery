@@ -1,5 +1,7 @@
+#!/usr/bin/env node
+
 const figlet = require('figlet');
-const menu  = require('./menu');
+const menu  = require('../menu');
 const chalk = require('chalk');
 
 figlet.text('Forgery', {
