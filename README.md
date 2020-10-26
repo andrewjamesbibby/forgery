@@ -1,15 +1,12 @@
-
 <p align="center">
 
 <p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/forgery.png">
+  A menu driven Laravel Forge command line tool.
+  <br />
+  Manage servers, sites, config, deployments and more with ease.
+  <br />
 </p> 
-<p align="center">
-A menu driven Laravel Forge command line tool.
-<br />
-Manage servers, sites, config, deployments and more with ease.
-<br />
-</p>
 
   ![Main Menu](screenshots/main.png?raw=true)
 </p>
@@ -54,17 +51,19 @@ Main menu
 
 ![Main Menu](screenshots/main.png?raw=true)
 
+  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/main.png">
+
 Create server
 
-![Main Menu](screenshots/server.png?raw=true)
+  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/server.png">
 
 Scheduler
 
-![Main Menu](screenshots/scheduler.png?raw=true)
+  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/scheduler.png">
 
 Firewall Rules
 
-![Main Menu](screenshots/firewall.png?raw=true)
+  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/firewall.png">
 
 **Note: Some sub-menus (e.g for example when managing configuration or environment files) will open your default terminal editor such as nano. Once contents are saved the information will be transferred to the input field**
 
