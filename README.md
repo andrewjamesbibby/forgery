@@ -1,9 +1,10 @@
 <p align="center">
-  <img width="65%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png?raw=true">
+  <img width="30%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png?raw=true">
   <br />
   A menu driven Laravel Forge command line tool.
   <br />
   Manage servers, sites, config, deployments and more with ease.
+  <br />
   <br />
 </p> 
 
