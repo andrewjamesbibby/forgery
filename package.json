@@ -1,6 +1,6 @@
 {
   "name": "@andrewjamesbibby/forgery",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A command line tool for Laravel forge",
   "repository": "andrewjamesbibby/forgery",
   "main": "bin/index.js",
