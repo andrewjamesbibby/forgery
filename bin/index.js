@@ -5,7 +5,7 @@ const menu  = require('../menu');
 const chalk = require('chalk');
 const fs = require('fs');
 
-let package = fs.readFileSync( `../package.json`, 'utf8');
+let package = fs.readFileSync( `${__dirname}/../package.json`, 'utf8');
 package = JSON.parse(package);
 
 figlet.text('Forgery', {
