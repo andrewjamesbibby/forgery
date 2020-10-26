@@ -1,16 +1,16 @@
-<br />
-<p align="center">
-  <h3 align="center">Forgery</h3>
-  
-  <p align="center">
-    A simple to use Laravel Forge command line tool - manage servers, sites, config and deployments.
-    <br />
 
+<p align="center">
+
+![Main Menu](screenshots/forgery_logo.png?raw=true)
+
+  <h3 align="center">Forgery</h3>
+ 
+  <p align="center">
+    A menu driven Laravel Forge command line tool - manage servers, sites, config, deployments and more with ease.
+    <br />
   </p>
 
-  <a href="https://github.com/andrewjamesbibby/forgery">
-    <img src="https://github.com/andrewjamesbibby/forgery/blob/ce40584757bec95ce4b88acd399fcfe186d22046/screenshots/main.png?raw=true" alt="Logo">
-  </a>
+  ![Main Menu](screenshots/main.png?raw=true)
 </p>
 
 ## About The Project
@@ -44,6 +44,24 @@ forgery
 3/ Navigate to 'Settings' and enter Forge API key when prompted
 
 **Note: The API Key will be stored at ~/.config/configstore/forgery.json so ensure to remove this file if Forgery is uninstalled and no longer required**
+
+4/ Now manage your servers!
+
+## Screenshots
+
+Main menu
+![Main Menu](screenshots/main.png?raw=true)
+
+Create server
+![Main Menu](screenshots/server.png?raw=true)
+
+Scheduler
+![Main Menu](screenshots/scheduler.png?raw=true)
+
+Firewall Rules
+![Main Menu](screenshots/firewall.png?raw=true)
+
+**Note: Some sub-menus (e.g for example when managing configuration or environment files) will open your default terminal editor such as nano. Once contents are saved the information will be transferred to the input field**
 
 ## Contributing
 Any contributions you make are **greatly appreciated**.
