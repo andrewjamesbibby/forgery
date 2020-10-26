@@ -26,7 +26,7 @@ const setApiKey = () => {
     ])
     .then((response) => {
         config.set('forge.api_key', response.api_key);
-        notify.success('Forge API key stored');
+        notify.success('Forge API key stored - exit and restart to take effect');
         menu.main();
     });
 };

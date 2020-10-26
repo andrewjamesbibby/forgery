@@ -139,7 +139,7 @@ const getSite = async () => {
     let choices;
 
     try {
-        choices = await forge.listSites();
+        choices = await options.siteChoices();
     } catch(error) {
         handleError(error);
         menu.sites();
@@ -171,7 +171,7 @@ const deleteSite = async () => {
     let choices;
 
     try {
-        choices = await forge.listSites();
+        choices = await options.siteChoices();
     } catch(error) {
         handleError(error);
         menu.sites();

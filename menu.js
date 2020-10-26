@@ -110,7 +110,7 @@ exports.services = () => {
                 { name: '<--', value: this.main },
                 { name: 'Reboot Nginx', value: services.rebootNginx },
                 { name: 'Reboot PHP', value: services.rebootPhp },
-                { name: 'Reboot MySQL', value: services.rebootNginx },
+                { name: 'Reboot MySQL', value: services.rebootMysql },
                 { name: '<--', value: this.main },
             ],
         },

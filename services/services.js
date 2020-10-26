@@ -130,7 +130,7 @@ const rebootMysql = async () => {
     .then(async (answer) => {
         try {
             const server = await forge.rebootMysql(answer.server.id);
-            notify.success('PHP rebooted');
+            notify.success('MySQL rebooted');
             console.log(server.data);
         } catch(error) {
             handleError(error);
