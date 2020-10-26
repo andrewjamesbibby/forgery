@@ -1,10 +1,7 @@
 
 <p align="center">
 
-
-  <h3 align="center">
-    ![Main Menu](screenshots/forgery_logo.png?raw=true)  
-  </h3>
+![Main Menu](screenshots/forgery.png?raw=true)
 
   <h3 align="center">Forgery</h3>
  
