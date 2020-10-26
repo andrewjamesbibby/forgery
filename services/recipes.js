@@ -76,7 +76,15 @@ const listRecipes = async () => {
 
 const getRecipe = async () => {
 
-    const choices = await options.recipeChoices();
+    let choices;
+
+    try {
+        choices = await options.recipeChoices();
+    } catch(error) {
+        handleError(error);
+        menu.recipes();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -94,7 +102,15 @@ const getRecipe = async () => {
 
 const updateRecipe = async () => {
 
-    const choices = await options.recipeChoices();
+    let choices;
+
+    try {
+        choices = await options.recipeChoices();
+    } catch(error) {
+        handleError(error);
+        menu.recipes();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -130,7 +146,15 @@ const updateRecipe = async () => {
 
 const deleteRecipe = async () => {
 
-    const choices = await options.recipeChoices();
+    let choices;
+
+    try {
+        choices = await options.recipeChoices();
+    } catch(error) {
+        handleError(error);
+        menu.recipes();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -155,8 +179,17 @@ const deleteRecipe = async () => {
 
 const runRecipe = async () => {
 
-    const recipeChoices = await options.recipeChoices();
-    const serverChoices = await options.serverChoices();
+    let recipeChoices;
+    let serverChoices;
+
+    try {
+        recipeChoices = await options.recipeChoices();
+        serverChoices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.recipes();
+        return;
+    }
 
     inquirer.prompt([
         {

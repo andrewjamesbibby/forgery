@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createKey = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.sshKeys();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -58,7 +66,13 @@ const createKey = async () => {
 
 const listKeys = async () => {
 
-    const choices = await options.serverChoices();
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.sshKeys();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -108,7 +122,13 @@ const listKeys = async () => {
 
 const deleteKey = async () => {
 
-    const choices = await options.serverChoices();
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.sshKeys();
+        return;
+    }
 
     inquirer.prompt([
         {

@@ -10,7 +10,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const enableQuickDeployment = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -42,7 +50,15 @@ const enableQuickDeployment = async () => {
 
 const disableQuickDeployment = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -74,7 +90,15 @@ const disableQuickDeployment = async () => {
 
 const getDeploymentScript = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -106,7 +130,15 @@ const getDeploymentScript = async () => {
 
 const updateDeploymentScript = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -150,7 +182,15 @@ const updateDeploymentScript = async () => {
 
 const deployNow = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -182,7 +222,15 @@ const deployNow = async () => {
 
 const resetDeploymentStatus = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -214,7 +262,15 @@ const resetDeploymentStatus = async () => {
 
 const getDeploymentLog = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.deployment();
+        return;
+    }
 
     inquirer.prompt([
         {

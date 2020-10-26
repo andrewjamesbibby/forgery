@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createWorker = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.workers();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -106,7 +114,15 @@ const createWorker = async () => {
 
 const listWorkers = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.workers();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -160,7 +176,15 @@ const listWorkers = async () => {
 
 const getWorker = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.workers();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -216,7 +240,15 @@ const getWorker = async () => {
 
 const deleteWorker = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.workers();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -272,7 +304,15 @@ const deleteWorker = async () => {
 
 const restartWorker = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.workers();
+        return;
+    }
 
     inquirer.prompt([
         {

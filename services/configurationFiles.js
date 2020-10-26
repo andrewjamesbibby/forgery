@@ -10,7 +10,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const getNginxConfiguration = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.configurationFiles();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -42,7 +50,15 @@ const getNginxConfiguration = async () => {
 
 const updateNginxConfiguration = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.configurationFiles();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -85,7 +101,15 @@ const updateNginxConfiguration = async () => {
 
 const getEnvironmentFile = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.configurationFiles();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -117,7 +141,15 @@ const getEnvironmentFile = async () => {
 
 const updateEnvironmentFile = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.configurationFiles();
+        return;
+    }
 
     inquirer.prompt([
         {

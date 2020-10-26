@@ -10,77 +10,19 @@ const chalk = require('chalk');
 
 inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'));
 
-const listServers = async () => {
+const createServer = async () => {
+
+    let credentials;
+    let regions;
+
     try {
-        const result = await forge.listServers();
-
-        const table = new Table({
-            head: [
-                chalk.green('ID'),
-                chalk.green('Name'),
-                chalk.green('IP'),
-                chalk.green('Region'),
-                chalk.green('Status'),
-            ]
-        });
-
-        result.data.servers.forEach((server) => {
-            table.push([
-                server.id,
-                server.name,
-                dedent`
-                    Public: ${server.ip_address}
-                    Private: ${server.private_ip_address}
-                `,
-                server.region,
-                server.is_ready ? chalk.green('✓') : chalk.red('x')
-            ]);
-        });
-
-        console.log(table.toString());
+        credentials = await forge.getCredentials();
+        regions = await forge.getRegions();
     } catch(error) {
         handleError(error);
-    } finally {
         menu.servers();
         return;
     }
-};
-
-const getServer = async () => {
-
-    const choices = await options.serverChoices();
-
-    inquirer.prompt([
-        {
-            type: 'autocomplete',
-            name: 'server',
-            message: "Select a server:",
-            choices: choices,
-            source: (answered, input) => {
-                input = input || '';
-                return choices.filter(choice => {
-                    return choice.name.includes(input);
-                });
-            },
-        },
-    ])
-    .then(async (answer) => {
-        try {
-            const result = await forge.getServer(answer.server.id);
-            console.log(result.data);
-        } catch(error) {
-            handleError(error);
-        } finally {
-            menu.servers();
-        }
-    });
-
-};
-
-const createServer = async () => {
-
-    const credentials = await forge.getCredentials();
-    const regions = await forge.getRegions();
 
     inquirer.prompt([
         {
@@ -229,7 +171,6 @@ const createServer = async () => {
         },
     ])
     .then(async (answers) => {
-
         if(! answers.confirm) {
             notify.info('Aborted server creation');
             menu.servers();
@@ -245,14 +186,96 @@ const createServer = async () => {
             menu.servers();
             return;
         }
+    });
 
+};
+
+const listServers = async () => {
+    try {
+        const result = await forge.listServers();
+
+        const table = new Table({
+            head: [
+                chalk.green('ID'),
+                chalk.green('Name'),
+                chalk.green('IP'),
+                chalk.green('Region'),
+                chalk.green('Status'),
+            ]
+        });
+
+        result.data.servers.forEach((server) => {
+            table.push([
+                server.id,
+                server.name,
+                dedent`
+                    Public: ${server.ip_address}
+                    Private: ${server.private_ip_address}
+                `,
+                server.region,
+                server.is_ready ? chalk.green('✓') : chalk.red('x')
+            ]);
+        });
+
+        console.log(table.toString());
+    } catch(error) {
+        handleError(error);
+    } finally {
+        menu.servers();
+        return;
+    }
+};
+
+const getServer = async () => {
+
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.servers();
+        return;
+    }
+
+    inquirer.prompt([
+        {
+            type: 'autocomplete',
+            name: 'server',
+            message: "Select a server:",
+            choices: choices,
+            source: (answered, input) => {
+                input = input || '';
+                return choices.filter(choice => {
+                    return choice.name.includes(input);
+                });
+            },
+        },
+    ])
+    .then(async (answer) => {
+        try {
+            const result = await forge.getServer(answer.server.id);
+            console.log(result.data);
+        } catch(error) {
+            handleError(error);
+        } finally {
+            menu.servers();
+        }
     });
 
 };
 
 const deleteServer = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.servers();
+        return;
+    }
 
     inquirer.prompt([
         {

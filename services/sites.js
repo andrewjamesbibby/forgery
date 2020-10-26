@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createSite = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.sites();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -128,7 +136,15 @@ const listSites = async () => {
 
 const getSite = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await forge.listSites();
+    } catch(error) {
+        handleError(error);
+        menu.sites();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -152,7 +168,15 @@ const getSite = async () => {
 
 const deleteSite = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await forge.listSites();
+    } catch(error) {
+        handleError(error);
+        menu.sites();
+        return;
+    }
 
     inquirer.prompt([
         {

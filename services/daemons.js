@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createDaemon = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.daemons();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -57,7 +65,15 @@ const createDaemon = async () => {
 
 const listDaemons = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.daemons();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -109,7 +125,15 @@ const listDaemons = async () => {
 
 const deleteDaemon = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.daemons();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -165,7 +189,15 @@ const deleteDaemon = async () => {
 
 const restartDaemon = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.daemons();
+        return;
+    }
 
     inquirer.prompt([
         {

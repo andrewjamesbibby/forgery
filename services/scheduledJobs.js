@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createJob = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.scheduledJobs();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -66,7 +74,15 @@ const createJob = async () => {
 
 const listJobs = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.scheduledJobs();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -116,7 +132,15 @@ const listJobs = async () => {
 
 const deleteJob = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.scheduledJobs();
+        return;
+    }
 
     inquirer.prompt([
         {

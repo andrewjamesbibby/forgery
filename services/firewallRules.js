@@ -11,7 +11,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const createRule = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.firewallRules();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -67,7 +75,15 @@ const createRule = async () => {
 
 const listRules = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.firewallRules();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -118,7 +134,15 @@ const listRules = async () => {
 
 const deleteRule = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.firewallRules();
+        return;
+    }
 
     inquirer.prompt([
         {

@@ -25,7 +25,7 @@ figlet.text('Forgery', {
 
     console.log(`
         by Andrew James Bibby
-                 ${package.version}
+                ${package.version}
     `);
 
     menu.main();

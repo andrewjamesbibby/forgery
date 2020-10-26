@@ -9,7 +9,15 @@ inquirer.registerPrompt('autocomplete', require('inquirer-autocomplete-prompt'))
 
 const installNewRepository = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.gitProjects();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -74,7 +82,15 @@ const installNewRepository = async () => {
 
 const removeRepository = async () => {
 
-    const choices = await options.siteChoices();
+    let choices;
+
+    try {
+        choices = await options.siteChoices();
+    } catch(error) {
+        handleError(error);
+        menu.gitProjects();
+        return;
+    }
 
     inquirer.prompt([
         {

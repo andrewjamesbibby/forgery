@@ -7,7 +7,15 @@ const menu = require('../menu');
 
 const rebootNginx = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.services();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -40,7 +48,15 @@ const rebootNginx = async () => {
 
 const rebootPhp = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.services();
+        return;
+    }
 
     inquirer.prompt([
         {
@@ -87,7 +103,15 @@ const rebootPhp = async () => {
 
 const rebootMysql = async () => {
 
-    const choices = await options.serverChoices();
+    let choices;
+
+    try {
+        choices = await options.serverChoices();
+    } catch(error) {
+        handleError(error);
+        menu.services();
+        return;
+    }
 
     inquirer.prompt([
         {
