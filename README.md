@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="50%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/forgery.png">
+  <img width="50%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png">
   <br />
   A menu driven Laravel Forge command line tool.
   <br />
