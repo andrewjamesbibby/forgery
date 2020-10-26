@@ -1,6 +1,4 @@
 <p align="center">
-
-<p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/forgery.png">
   A menu driven Laravel Forge command line tool.
   <br />
@@ -8,8 +6,7 @@
   <br />
 </p> 
 
-  ![Main Menu](screenshots/main.png?raw=true)
-</p>
+![Main Menu](screenshots/main.png?raw=true)
 
 ## About The Project
 
