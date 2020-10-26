@@ -1,7 +1,10 @@
 
 <p align="center">
 
-![Main Menu](screenshots/forgery_logo.png?raw=true)
+
+  <h3 align="center">
+    ![Main Menu](screenshots/forgery_logo.png?raw=true)  
+  </h3>
 
   <h3 align="center">Forgery</h3>
  
@@ -50,15 +53,19 @@ forgery
 ## Screenshots
 
 Main menu
+
 ![Main Menu](screenshots/main.png?raw=true)
 
 Create server
+
 ![Main Menu](screenshots/server.png?raw=true)
 
 Scheduler
+
 ![Main Menu](screenshots/scheduler.png?raw=true)
 
 Firewall Rules
+
 ![Main Menu](screenshots/firewall.png?raw=true)
 
 **Note: Some sub-menus (e.g for example when managing configuration or environment files) will open your default terminal editor such as nano. Once contents are saved the information will be transferred to the input field**
