@@ -6,7 +6,9 @@
   <br />
 </p> 
 
-![Main Menu](screenshots/main.png?raw=true)
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/main.png">
+</p>
 
 ## About The Project
 
@@ -44,23 +46,23 @@ forgery
 
 ## Screenshots
 
-Main menu
-
-![Main Menu](screenshots/main.png?raw=true)
-
-  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/main.png">
-
 Create server
 
-  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/server.png">
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/server.png">
+</p>    
 
 Scheduler
 
-  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/scheduler.png">
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/scheduler.png">
+</p>
 
 Firewall Rules
 
-  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/firewall.png">
+<p align="center">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/firewall.png">
+</p>
 
 **Note: Some sub-menus (e.g for example when managing configuration or environment files) will open your default terminal editor such as nano. Once contents are saved the information will be transferred to the input field**
 
