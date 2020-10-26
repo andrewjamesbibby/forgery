@@ -3,6 +3,10 @@
 const figlet = require('figlet');
 const menu  = require('../menu');
 const chalk = require('chalk');
+const fs = require('fs');
+
+let package = fs.readFileSync( `../package.json`, 'utf8');
+package = JSON.parse(package);
 
 figlet.text('Forgery', {
     font: 'Big',
@@ -20,7 +24,8 @@ figlet.text('Forgery', {
     console.log(chalk.green(data));
 
     console.log(`
-  Forgery 0.4.0 by Andrew James Bibby
+        by Andrew James Bibby
+                 ${package.version}
     `);
 
     menu.main();

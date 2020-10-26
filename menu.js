@@ -13,6 +13,7 @@ const workers = require('./services/workers');
 const recipes = require('./services/recipes');
 const sites = require('./services/sites');
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 exports.main = () => {
     inquirer.prompt([
@@ -393,8 +394,12 @@ exports.settings = () => {
 };
 
 exports.about = () => {
+
+    let package = fs.readFileSync( `${__dirname}/package.json`, 'utf8');
+    package = JSON.parse(package);
+
     console.log(`
- Forgery 0.4.0 by Andrew James Bibby
+ Forgery ${package.version} by Andrew James Bibby
  Github: https://github.com/andrewjamesbibby/forgery
  Twitter: @andrewjbibby
  Licence: MIT
