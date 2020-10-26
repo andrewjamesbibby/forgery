@@ -1,14 +1,15 @@
 
 <p align="center">
 
-![Main Menu](screenshots/forgery.png?raw=true)
-
-  <h3 align="center">Forgery</h3>
- 
-  <p align="center">
-    A menu driven Laravel Forge command line tool - manage servers, sites, config, deployments and more with ease.
-    <br />
-  </p>
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/forgery.png">
+</p> 
+<p align="center">
+A menu driven Laravel Forge command line tool.
+<br />
+Manage servers, sites, config, deployments and more with ease.
+<br />
+</p>
 
   ![Main Menu](screenshots/main.png?raw=true)
 </p>
