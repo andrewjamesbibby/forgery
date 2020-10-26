@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="65%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png">
+  <img width="65%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png?raw=true">
   <br />
   A menu driven Laravel Forge command line tool.
   <br />
@@ -8,7 +8,7 @@
 </p> 
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/main.png">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/main.png?raw=true">
 </p>
 
 ## About The Project
@@ -50,19 +50,19 @@ forgery
 Create server
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/server.png">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/server.png?raw=true">
 </p>    
 
 Scheduler
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/scheduler.png">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/scheduler.png?raw=true">
 </p>
 
 Firewall Rules
 
 <p align="center">
-  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/firewall.png">
+  <img width="80%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/firewall.png?raw=true">
 </p>
 
 **Note: Some sub-menus (e.g for example when managing configuration or environment files) will open your default terminal editor such as nano. Once contents are saved the information will be transferred to the input field**
