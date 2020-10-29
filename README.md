@@ -1,6 +1,14 @@
 <p align="center">
   <img width="30%" src="https://raw.githubusercontent.com/andrewjamesbibby/forgery/master/screenshots/logo.png?raw=true">
   <br />
+  <br />
+  
+  [![npm version](https://badge.fury.io/js/%40andrewjamesbibby%2Fforgery.svg)](https://badge.fury.io/js/%40andrewjamesbibby%2Fforgery)
+  
+  ![NPM Downloads](https://img.shields.io/npm/dw/@andrewjamesbibby/forgery)
+  
+  ![NPM License](https://img.shields.io/npm/l/@andrewjamesbibby/forgery)
+  
   A menu driven Laravel Forge command line tool.
   <br />
   Manage servers, sites, config, deployments and more with ease.
